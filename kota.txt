@@ -8,7 +8,7 @@ Riyadh - Saudi Arabia
 *Beijing -China
 *Tokyo - Japan
 *Teheran - Iran
-Sri Jayawardenepura Kotte – Sri Lanka
+*Sri Jayawardenepura Kotte – Sri Lanka
 Seoul - South Korea
 Petaling Jaya - Malaysia
 Bangkok - Thailand
@@ -24,6 +24,11 @@ Vientiane – Laos
 Damaskus – Syiria
 Ankara - Turkey
 Beirut – Lebanon
+Tacken – Uzbekistan
+
+Afrika
+Dakar - Sinegal
+Algiers – Algeria
 
 
 
