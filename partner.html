@@ -24,7 +24,7 @@
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="assets/css/responsive.css">
 <!-- Title -->
-<title>BAACN - City Partners</title>
+<title>BAACN - Members</title>
 <!-- Favicon -->
 <link href="assets/images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="assets/images/favicon.ico" sizes="128x128" rel="shortcut icon" />
@@ -42,6 +42,7 @@
 <![endif]-->
 </head>
 <body class="bgc-f7">
+<div id="google_translate_element"></div>
 <div class="wrapper ovh">
   <div class="preloader"></div>
   
@@ -64,39 +65,48 @@
                 <ul class="row dropdown-megamenu">
                   <li class="col mega_menu_list">
                     <ul>
-                      <li><a href="member-detail">Indonesia</a></li>
-                      <li><a href="member-detail">Pakistan</a></li>
-                      <li><a href="member-detail">Yaman</a></li>
-                      <li><a href="member-detail">Arab Saudi</a></li>
-                      <li><a href="member-detail">Chinese</a></li>
-                      <li><a href="member-detail">Japan</a></li>
-                      <li><a href="member-detail">South Korea</a></li>
-                      <li><a href="pmember-detail">Iran</a></li>
+                        <li><a href="bandung">Indonesia</a></li>
+                        <li><a href="islamabad">Pakistan</a></li>
+                        <li><a href="sana">Yaman</a></li>
+                        <li><a href="riyadh">Arab Saudi</a></li>
+                        <li><a href="beijing">Chinese</a></li>
+                        <li><a href="tokyo">Japan</a></li>
+                        <li><a href="seoul">South Korea</a></li>
+                        <li><a href="teheran">Iran</a></li>
+                        <li><a href="baghdad">Iraq</a></li>
+                        <li><a href="damaskus">Syria</a></li>
+                        <li><a href="tacken">Uzbekistan</a></li>
                     </ul>
                   </li>
                     <li class="col mega_menu_list">
                       <ul>
-                        <li><a href="member-detail">Srilanka</a></li>
-                        <li><a href="member-detail">Malaysia</a></li>
-                        <li><a href="member-detail">Thailand</a></li>
-                        <li><a href="member-detail">Vietnam</a></li>
-                        <li><a href="member-detail">Japan</a></li>
-                        <li><a href="pmember-detail">India</a></li>
-                        <li><a href="member-detail">Nigeria</a></li>
-                        <li><a href="member-detail">Ghana</a></li>
+                        <li><a href="amman">Jordan</a></li>
+                        <li><a href="sri-jayawardenepura-kotte">Srilanka</a></li>
+                        <li><a href="petaling-jaya">Malaysia</a></li>
+                        <li><a href="bangkok">Thailand</a></li>
+                        <li><a href="hanoi">Vietnam</a></li>
+                        <li><a href="kathmandu">Nepal</a></li>
+                        <li><a href="new-delhi">India</a></li>
+                        <li><a href="abuja">Nigeria</a></li>
+                        <li><a href="accra">Ghana</a></li>
+                        <li><a href="ankara">Turkey</a></li>
+                        <li><a href="dakar">Sinegal</a></li>
                       </ul>
                     </li>
                   <li class="col mega_menu_list">
                       <ul>
-                        <li><a href="member-detail">Afganistan</a></li>
-                        <li><a href="member-detail">Myanmar</a></li>
-                        <li><a href="member-detail">Cambodia</a></li>
-                        <li><a href="member-detail">Singapore</a></li>
-                        <li><a href="member-detail">Philippines</a></li>
-                        <li><a href="member-detail">Egypt</a></li>
-                        <li><a href="member-detail">Aljazair</a></li>
-                        <li><a href="pmember-detail">Sinegal</a></li>
-                      </ul>
+                        <li><a href="beirut">Libanon</a></li>
+                        <li><a href="vientiane">Laos</a></li>
+                        <li><a href="kabul">Afganistan</a></li>
+                        <li><a href="naypyidaw">Myanmar</a></li>
+                        <li><a href="phnom-penh">Cambodia</a></li>
+                        <li><a href="singapore">Singapore</a></li>
+                        <li><a href="manila">Philippines</a></li>
+                        <li><a href="kairo">Egypt</a></li>
+                        <li><a href="algiers">Algeria</a></li>
+                        <li><a href="dakar">Sinegal</a></li>
+                        <li><a href="member">See All</a></li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -111,14 +121,42 @@
             </ul>
           </div>
           <div class="col-auto">
-            <div class="d-flex align-items-center">
-              <a class="sidemenu-btn filter-btn-right" href="#"><img src="assets/images/dark-nav-icon.svg" alt=""></a>
-            </div>
+              <div class="d-flex align-items-center">
+                  <a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#modLanguage" id="flag_icon"></a>
+                  <a class="sidemenu-btn filter-btn-right" href="#"><img class="img-1" src="assets/images/icon/nav-icon-white.svg" alt=""><img class="img-2" src="assets/images/icon/nav-icon-dark.svg" alt=""></a>
+              </div>
           </div>
         </div>
       </div>
     </nav>
   </header>
+
+   <!-- Modal -->
+        <div class="modal fade" id="modLanguage" tabindex="-1" aria-labelledby="modLanguageLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modLanguageLabel">Select Language</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="radiobox-style1">
+                        <div class="radio-element">
+                        <div class="form-check d-flex align-items-center mb15" onclick="setLanguage('en')">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1"><img class="mr10" src="assets/images/flag/usa.png" alt="engriss" > English</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb15" onclick="setLanguage('id');">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2"><img class="mr10" src="assets/images/flag/id.png" alt="engriss" > Bahasa</label>
+                        </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            </div>
+        </div>
+        <!-- /Modal -->
  
   <!-- Menu In Hiddn SideBar -->
   <div class="rightside-hidden-bar">
@@ -143,25 +181,23 @@
           <div class="row pt20 pb30 pl30">
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Total Free Customer Care</p>
-                <h6 class="info-phone dark-color"><a href="+(0)-123-050-945-02">+(0) 123 050 945 02</a></h6>
-              </div>
+                    <p class="info-title dark-color">Total Free Customer Care</p>
+                    <h6 class="info-phone dark-color"><a href="+62 81318667479">+62 81318667479</a></h6>
+                </div>
             </div>
             <div class="col-auto">
               <div class="contact-info">
-                <p class="info-title dark-color">Nee Live Support?</p>
-                <h6 class="info-mail dark-color"><a href="mailto:hi@homez.com">hi@homez.com</a></h6>
-              </div>
+                    <p class="info-title dark-color">Nee Live Support?</p>
+                    <h6 class="info-mail dark-color"><a href="mailto:bapperida@bandung.go.id">bapperida@bandung.go.id</a></h6>
+                </div>
             </div>
           </div>
           <div class="row pt30 pb30 bdrt1">
             <div class="col-auto">
               <div class="social-style-sidebar d-flex align-items-center pl30">
-                <h6 class="me-4 mb-0">Follow us</h6>
-                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                  <h6 class="me-4 mb-0">Follow us</h6>
+                  <a class="me-3" href="https://www.instagram.com/asiaafricayouthforum/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a class="me-3" href="https://www.youtube.com/@bapperidakotabandung" target="_blank"><i class="fab fa-youtube"></i></a>
               </div>
             </div>
           </div>
@@ -191,7 +227,7 @@
           <div class="mobile_menu_bar d-flex justify-content-between align-items-center">
             <a class="menubar" href="#menu"><img src="assets/images/mobile-dark-nav-icon.svg" alt=""></a>
             <a class="mobile_logo" href="#"><img src="assets/images/header-logo2.svg" alt=""></a>
-            <a href="page-login"><span class="icon fz18 far fa-user-circle"></span></a>
+            <a href=""><span class="icon fz18 far fa-user-circle"></span></a>
           </div>
         </div>
       </div>
@@ -206,24 +242,26 @@
           <ul>
             <li><span>Asia</span>
               <ul>
-                <li><a href="member-detail">Indonesia</a></li>
-                <li><a href="member-detail">India</a></li>
-                <li><a href="member-detail">Pakistan</a></li>
-                <li><a href="member-detail">Yemen</a></li>
-                <li><a href="member-detail">Saudi Arabia</a></li>
-                <li><a href="member-detail">Chinese</a></li>
-                <li><a href="member-detail">Japan</a></li>
-                <li><a href="member-detail">Srilanka</a></li>
-                <li><a href="member-detail">South Korea</a></li>
+                <li><a href="bandung">Indonesia</a></li>
+                <li><a href="islamabad">Pakistan</a></li>
+                <li><a href="sana">Yaman</a></li>
+                <li><a href="riyadh">Arab Saudi</a></li>
+                <li><a href="beijing">Chinese</a></li>
+                <li><a href="tokyo">Japan</a></li>
+                <li><a href="seoul">South Korea</a></li>
+                <li><a href="teheran">Iran</a></li>
+                <li><a href="baghdad">Iraq</a></li>
+                <li><a href="damaskus">Syria</a></li>
+                <li><a href="tacken">Uzbekistan</a></li>
               </ul>
             </li>
             <li><span>Africa</span>
               <ul>
-                <li><a href="member-detail">Sinegal</a></li>
-                <li><a href="member-detail">Aljazair</a></li>
-                <li><a href="member-detail">Egypt</a></li>
-                <li><a href="member-detail">Nigeria</a></li>
-                <li><a href="member-detail">Ghana</a></li>
+                <li><a href="dakar">Sinegal</a></li>
+                <li><a href="algiers">Algeria</a></li>
+                <li><a href="kairo">Egypt</a></li>
+                <li><a href="abuja">Nigeria</a></li>
+                <li><a href="accra">Ghana</a></li>
               </ul>
             </li>
           </ul>
@@ -238,7 +276,7 @@
         <li><a href="faq">FAQ</a></li>
         <li><a href="contact">Contact</a></li>
         <li class="px-3 mobile-menu-btn">
-          <a href="page-dashboard-add-property" class="ud-btn btn-thm text-white">Login<i class="fal fa-arrow-right-long"></i></a>
+          <a href="" class="ud-btn btn-thm text-white">Login<i class="fal fa-arrow-right-long"></i></a>
         </li>
         <!-- Only for Mobile View -->
       </ul>
@@ -268,380 +306,526 @@
     <section class="pt0 pb90 pb10-md mt60">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
+          <div class="col-lg-12 m-auto wow fadeInUp" data-wow-delay="300ms">
             <div class="main-title text-center">
-              <h2 class="title">Meet Our Asia Partner Cities</h2>
+              <h2 class="title">Meet Our Partner Cities</h2>
               <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
             </div>
           </div>
         </div>
         <!-- row -->
-        <div class="row">
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/jkt.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Jakarta</a></h6>
-                    <span>Indonesia</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/kabul.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Kabul</a></h6>
-                    <span>Afganistan</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/india.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">New Delhi</a></h6>
-                    <span>India</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/islam.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Islamabad</a></h6>
-                    <span>Pakistan</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/sana.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Sana'a</a></h6>
-                    <span>Yaman</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/riyadh.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Riyadh</a></h6>
-                    <span>Saudia Arabia</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/beijing.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Beijing</a></h6>
-                    <span>Chinese</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/tokyo.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Tokyo</a></h6>
-                    <span>Japan</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/teheran.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Teheran</a></h6>
-                    <span>Iran</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/sri.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Sri Jaya Kotte</a></h6>
-                    <span>Sri Lanka</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/soun.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Seoul</a></h6>
-                    <span>South Korea</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/kl.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Kuala Lumpur</a></h6>
-                    <span>Malaysia</span>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/bengkok.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Bangkok</a></h6>
-                    <span>Thailand</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/hanoi.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Hanoi</a></h6>
-                    <span>Vietnam</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/myanmar.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Naypyidaw</a></h6>
-                    <span>Myanmar</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/kambodia.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Phnom Penh</a></h6>
-                    <span>Cambodia</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/singapore.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Singapore</a></h6>
-                    <span>Singapore</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
-            <div class="listing-style7 mb60">
-                <div class="list-thumb">
-                    <img class="w-100" src="assets/images/city/manila.jpg" alt="">
-                    <div class="list-meta">
-                        <a href=""><span class="flaticon-like"></span></a>
-                        <a href="member-detail"><span class="flaticon-fullscreen"></span></a>
-                    </div>
-                </div>
-                <div class="list-content">
-                    <h6 class="list-title mb-0"><a href="member-detail">Manila</a></h6>
-                    <span>Philippines</span>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- /row -->
-
-        <!-- row -->
-        <div class="row">
-          <div class="col-lg-6 m-auto wow fadeInUp" data-wow-delay="300ms">
-            <div class="main-title text-center">
-              <h2 class="title">Meet Our Afrika Partner Cities</h2>
-              <p class="paragraph">Aliquam lacinia diam quis lacus euismod</p>
-            </div>
-          </div>
-        </div>
-
-         <!-- list -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="explore-apartment-5col-slider navi_pagi_bottom_center slider-5-grid owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
-
-                <div class="item">
-                    <a href="member-detail">
-                    <div class="apartment-style1 mb60">
-                        <div class="apartment-img"><img class="w-100" src="assets/images/city/dakar.jpg" alt=""></div>
-                        <div class="apartment-content">
-                        <h6 class="title mb-0">Dakar</h6>
-                        <p class="text mb-0">Senegal</p>
+        <div class="navtab-style1 mb-4 mb-lg-5 mt50">
+                <nav>
+                  <div class="nav nav-tabs mb20" id="nav-tab2" role="tablist">
+                    <button class="nav-link active fw600" id="nav-item1-tab" data-bs-toggle="tab" data-bs-target="#nav-item1" type="button" role="tab" aria-controls="nav-item1" aria-selected="true">ASIA</button>
+                    <button class="nav-link fw600" id="nav-item2-tab" data-bs-toggle="tab" data-bs-target="#nav-item2" type="button" role="tab" aria-controls="nav-item2" aria-selected="false">AFRICA</button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <!-- asia -->
+                  <div class="tab-pane fade show active fz15" id="nav-item1" role="tabpanel" aria-labelledby="nav-item1-tab">
+                    <div class="row mt50">
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/bdg.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="bandung"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="bandung">Bandung</a></h6>
+                                <span>Indonesia</span>
+                            </div>
                         </div>
-                    </div>
-                    </a>
-                </div>
+                      </div>
 
-                <div class="item">
-                    <a href="member-detail">
-                    <div class="apartment-style1 mb60">
-                        <div class="apartment-img"><img class="w-100" src="assets/images/city/jair.jpg" alt=""></div>
-                        <div class="apartment-content">
-                        <h6 class="title mb-0">Aljir</h6>
-                        <p class="text mb-0">Aljazair</p>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kabul.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="kabul"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="kabul">Kabul</a></h6>
+                                <span>Afganistan</span>
+                            </div>
                         </div>
-                    </div>
-                    </a>
-                </div>
+                      </div>
 
-                <div class="item">
-                    <a href="member-detail">
-                    <div class="apartment-style1 mb60">
-                        <div class="apartment-img"><img class="w-100" src="assets/images/city/mesir.jpg" alt=""></div>
-                        <div class="apartment-content">
-                        <h6 class="title mb-0">Cairo</h6>
-                        <p class="text mb-0">Egypt</p>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/india.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="new-delhi"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="new-delhi">New Delhi</a></h6>
+                                <span>India</span>
+                            </div>
                         </div>
-                    </div>
-                    </a>
-                </div>
+                      </div>
 
-                <div class="item">
-                    <a href="member-detail">
-                    <div class="apartment-style1 mb60">
-                        <div class="apartment-img"><img class="w-100" src="assets/images/city/nigeria.jpg" alt=""></div>
-                        <div class="apartment-content">
-                        <h6 class="title mb-0">Abuja</h6>
-                        <p class="text mb-0">Nigeria</p>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/islam.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="islamabad"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="islamabad">Islamabad</a></h6>
+                                <span>Pakistan</span>
+                            </div>
                         </div>
-                    </div>
-                    </a>
-                </div>
+                      </div>
 
-                <div class="item">
-                    <a href="member-detail">
-                    <div class="apartment-style1 mb60">
-                        <div class="apartment-img"><img class="w-100" src="assets/images/city/ghana.jpg" alt=""></div>
-                        <div class="apartment-content">
-                        <h6 class="title mb-0">Accra</h6>
-                        <p class="text mb-0">Ghana</p>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/sana.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="sana"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="sana">Sana'a</a></h6>
+                                <span>Yaman</span>
+                            </div>
                         </div>
-                    </div>
-                    </a>
-                </div>
+                      </div>
 
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/riyadh.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="riyadh"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="riyadh">Riyadh</a></h6>
+                                <span>Saudia Arabia</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/beijing.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="beijing"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="beijing">Beijing</a></h6>
+                                <span>Chinese</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/tokyo.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="tokyo"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="tokyo">Tokyo</a></h6>
+                                <span>Japan</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/teheran.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="teheran"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="teheran">Teheran</a></h6>
+                                <span>Iran</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/sri.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="sri-jayawardenepura-kotte"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="sri-jayawardenepura-kotte">Sri Jaya.. Kotte</a></h6>
+                                <span>Sri Lanka</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/soun.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="seoul"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="seoul">Seoul</a></h6>
+                                <span>South Korea</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kl.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="petaling-jaya"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="petaling-jaya">Petaling Jaya</a></h6>
+                                <span>Malaysia</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/bengkok.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="bangkok"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="bangkok">Bangkok</a></h6>
+                                <span>Thailand</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/hanoi.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="hanoi"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="hanoi">Hanoi</a></h6>
+                                <span>Vietnam</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/myanmar.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="naypyidaw"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="naypyidaw">Naypyidaw</a></h6>
+                                <span>Myanmar</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kambodia.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="phnom-penh"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="phnom-penh">Phnom Penh</a></h6>
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/singapore.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="singapore"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="singapore">Singapore</a></h6>
+                                <span>Singapore</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/manila.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="manila"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="manila">Manila</a></h6>
+                                <span>Philippines</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /row -->
+                  </div>
+                  <!-- africa -->
+                  <div class="tab-pane fade fz15" id="nav-item2" role="tabpanel" aria-labelledby="nav-item2-tab">
+                    <div class="row mt50">
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/dakar.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="dakar"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="dakar">Dakar</a></h6>
+                                <span>Sinegal</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/algiers.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="algiers"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="algiers">Algiers</a></h6>
+                                <span>Algeria</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kairo.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="kairo"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="kairo">Cairo</a></h6>
+                                <span>Egypt</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/nigeria.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="abuja"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="abuja">Abuja</a></h6>
+                                <span>Nigeria</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/accra.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="accra"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="accra">Accra</a></h6>
+                                <span>Sinegal</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/adis.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="adis-ababa"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="adis-ababa">Adis Ababa</a></h6>
+                                <span>Ethiopia</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/monrovia.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="monrovia"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="monrovia">Monrovia</a></h6>
+                                <span>Liberia</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/tripoli.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="tripoli"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="tripoli">Tripoli</a></h6>
+                                <span>Libia</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/sudan.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="khartoum"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="khartoum">Khartoum</a></h6>
+                                <span>Sudan</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/casablanca.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="casablanca"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="casablanca">Casablanca</a></h6>
+                                <span>Morocco</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kigali.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="kigali"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="kigali">Kigali</a></h6>
+                                <span>Rwanda</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/kitali.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="kenya"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="kenya">Kitali</a></h6>
+                                <span>Kenya</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-lg-2 wow fadeInLeft" data-wow-delay="00ms">
+                        <div class="listing-style7 mb60">
+                            <div class="list-thumb">
+                                <img class="w-100" src="assets/images/city/lilongwe.jpg" alt="">
+                                <div class="list-meta">
+                                    <a href=""><span class="flaticon-like"></span></a>
+                                    <a href="lilongwe"><span class="flaticon-fullscreen"></span></a>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <h6 class="list-title mb-0"><a href="lilongwe">Lilongwe</a></h6>
+                                <span>Malawi</span>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- /africa -->
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- /list -->
-
 
       </div>
     </section>
@@ -660,10 +844,10 @@
                     <div class="social-widget text-center text-sm-end">
                     <div class="social-style1 light-style2">
                         <a class="me-2 fw600 fz15 text-accn-red" href="#">Follow us</a>
-                        <a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
-                        <a href=""><i class="fab fa-twitter list-inline-item"></i></a>
-                        <a href=""><i class="fab fa-instagram list-inline-item"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in list-inline-item"></i></a>
+                        <a href="https://www.instagram.com/asiaafricayouthforum/" target="_blank"><i class="fab fa-instagram list-inline-item"></i></a>
+                        <a href="https://www.youtube.com/@bapperidakotabandung" target="_blank"><i class="fab fa-youtube list-inline-item"></i></a>
+                        <!--<a href=""><i class="fab fa-facebook-f list-inline-item"></i></a>
+                        <a href=""><i class="fab fa-twitter list-inline-item"></i></a>-->
                     </div>
                     </div>
                 </div>
@@ -703,9 +887,8 @@
                             <div class="link-style1 light-style at-home9 mb-3">
                                 <h6 class="mb15 text-accn-blue">Need Information?</h6>
                                 <div class="link-list">
-                                     <a href="#"><i class="fa-brands fa-whatsapp"></i> +62 -1234-456</a>
-                                    <a href="#"><i class="fa-regular fa-mobile-screen"></i> +62 -1234-4568</a>
-                                    <a href="#"><i class="fa-regular fa-envelope"></i> accn@gmail.com</a>
+                                    <p><i class="fa-brands fa-whatsapp"></i> +62 81318667479</p>
+                                    <p><i class="fa-regular fa-envelope"></i> bapperida@bandung.go.id</p>
                                 </div>
                             </div>
                         </div>
