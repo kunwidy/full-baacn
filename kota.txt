@@ -41,14 +41,16 @@ Kigali – Rwanda
 Kenya
 Lilongwe – Malawi
 
-
-Kabul – Afhganistan (Peserta BAACN)
-Tacken – Uzbekistan (Peserta BAACN)
-Casablanca-Maroco (Peserta BAACN)
-Kigali – Rwanda (Peserta BAACN)
+#Tokyo - Jepang (Peserta BAACN)
+#NewDelhi -India ( Peserta BAACN)
+#Algiers - Algeria (Peserta BAACN)
+#Kabul – Afhganistan (Peserta BAACN)
+#Tacken – Uzbekistan (Peserta BAACN)
+#Casablanca-Maroco (Peserta BAACN)
+#Kigali – Rwanda (Peserta BAACN)
 Kenya (Peserta BAACN)
-Lilongwe – Malawi (Peserta BAACN)
-Islamabad (Peserta BAACN)
+#Lilongwe – Malawi (Peserta BAACN)
+#Islamabad (Peserta BAACN)
 
 
 
