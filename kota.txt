@@ -1,10 +1,10 @@
 *Bandung
 Jakarta
-Kabul-Afganistan
-New Delhi-India
-Islamabad-Pakistan
-Sana'a - Yaman
-Riyadh - Saudi Arabia
+*Kabul-Afganistan
+*New Delhi-India
+#Islamabad-Pakistan
+#Sana'a - Yaman
+#Riyadh - Saudi Arabia
 *Beijing -China
 *Tokyo - Japan
 *Teheran - Iran
