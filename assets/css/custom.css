@@ -38,6 +38,15 @@
     color: #EC2028;
 }
 
+.listing-style7 .list-tag{
+    background: #EC2028;
+    left: 10px;
+}
+
+.listing-style7 .list-meta a:hover{
+    background: #EC2028;
+}
+
 .listing-style11{
     background: #f7ffb3;
 }

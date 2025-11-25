@@ -13,7 +13,7 @@ Jakarta
 #*Petaling Jaya - Malaysia
 *Bangkok - Thailand
 Hanoi - Vietnam
-Naypyidaw – Myanmar
+#Naypyidaw – Myanmar
 Phnom Penh – Cambodia
 Singapore - Singapore
 Manila - Philipines
