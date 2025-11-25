@@ -36,8 +36,8 @@ Adis Ababa - Ethiopia
 Monrovia – Liberia
 Tripoli – Libya
 Khartoum – Sudan
-Casablanca-Morocco 
-Kigali – Rwanda
+#Casablanca-Morocco 
+#Kigali – Rwanda
 Kenya
 Lilongwe – Malawi
 
