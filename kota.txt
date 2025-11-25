@@ -5,12 +5,12 @@ Jakarta
 #Islamabad-Pakistan
 #Sana'a - Yaman
 #Riyadh - Saudi Arabia
-*Beijing -China
+#*Beijing -China
 *Tokyo - Japan
 *Teheran - Iran
 *Sri Jayawardenepura Kotte – Sri Lanka
 *Seoul - South Korea
-*Petaling Jaya - Malaysia
+#*Petaling Jaya - Malaysia
 *Bangkok - Thailand
 Hanoi - Vietnam
 Naypyidaw – Myanmar
