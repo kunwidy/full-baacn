@@ -14,9 +14,9 @@ Jakarta
 *Bangkok - Thailand
 Hanoi - Vietnam
 #Naypyidaw – Myanmar
-Phnom Penh – Cambodia
-Singapore - Singapore
-Manila - Philipines
+###Phnom Penh – Cambodia
+###Singapore - Singapore
+##Manila - Philipines
 Kathmandu - Nepal
 Baghdad - Iraq
 Amman - Jordan
